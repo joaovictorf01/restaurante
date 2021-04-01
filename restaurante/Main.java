@@ -7,17 +7,25 @@ public class Main {
 		Cozinha cozinhaChinesa = new Cozinha(10, 21, "Yakissoba");
 Cozinha cozinhaItaliana=new Cozinha(13 , 22 , "Yakissoba " );
 
+
+
+
+
+
+
+
+
 		System.out.println(" cozinha mineira");
 
-		System.out.println(cozinhaMineira.toString());
+		System.out.println(cozinhaMineira);
 
 		System.out.println(" cozinha chinesa");
 
-		System.out.println(cozinhaChinesa.toString());
+		System.out.println(cozinhaChinesa);
 
 		System.out.println(" cozinha italiana.");
 		
-		System.out.println( cozinhaItaliana.toString());
+		System.out.println( cozinhaItaliana);
 	}
 
 }
