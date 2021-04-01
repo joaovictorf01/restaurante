@@ -1,64 +1,29 @@
 package restaurante;
 
-import java.util.ArrayList;
+
 
 public class Cozinha {
-	private int horaAbertura;
-	private int horaFechamento;
-	private String pratoPrincipal;
-	private ArrayList<Ingrediente> ingredientes;
-
-	public int getHoraAbertura() {
-		return horaAbertura;
-	}
-
-	public void setHoraAbertura(int horaAbertura) {
-		this.horaAbertura = horaAbertura;
-	}
-
-	public int getHoraFechamento() {
-		return horaFechamento;
-	}
-
-	public void setHoraFechamento(int horaFechamento) {
-		this.horaFechamento = horaFechamento;
-	}
-
-	public String getPratoPrincipal() {
-		return pratoPrincipal;
-	}
-
-	public void setPratoPrincipal(String pratoPrincipal) {
-		this.pratoPrincipal = pratoPrincipal;
-	}
-
-	public ArrayList<Ingrediente> getIngredientes() {
-		return ingredientes;
-	}
-
-	public void setIngredientes(ArrayList<Ingrediente> ingredientes) {
-		this.ingredientes = ingredientes;
-	}
-
-	// construtor
-	public Cozinha(int horaAbertura, int horaFechamento, String pratoPrincipal) {
-
-		this.horaAbertura = horaAbertura;
-		this.horaFechamento = horaFechamento;
-		this.pratoPrincipal = pratoPrincipal;
-		
-	}
 	
+	private String nome;
+	  private int horaAbertura;
+	  private int horaFechamento;
+	  private Prato pratoPrincipal;
 
-	@Override
-	public String toString() {
+	  public Cozinha(String nome, Prato pratoPrincipal, int horaAbertura, int horaFechamento)
+	    {
+	    this.nome = nome;
+	    this.pratoPrincipal = pratoPrincipal;
+	    this.horaAbertura = horaAbertura;
+	    this.horaFechamento = horaFechamento;
+	    }
 
-		String mostrar = " abre as: " + horaAbertura + "\nfecha as: " + horaFechamento + "\n prato principal:  "
-				+ pratoPrincipal;
-
-		return mostrar;
-
-	}
+	  @Override
+	  public String toString()
+	    {
+	    String text = "";
+	    text += "Restaurante: " + this.nome + "\n";
+	    text += "Prato principal: " + this.pratoPrincipal;
+	    return text;
+	  	
 	
-	
-}
+}}
