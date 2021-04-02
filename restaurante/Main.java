@@ -18,31 +18,62 @@ public class Main {
 		feijoada.adicionarIngrediente(farinha);
 		feijoada.adicionarIngrediente(CarnePorco);
 		feijoada.adicionarIngrediente(linguica);
+
 		Ingrediente molho = new Ingrediente("molho italiano ", 3, "10/05/2021");
-		Ingrediente  macarrão = new Ingrediente(" macarrãozinho ", 5, "10/09/2021");
-		Ingrediente  carne = new Ingrediente(" carne ", 5, "10/09/2021");
-		Prato yakissoba=new Prato(" Yakissoba moda italiana" );
+		Ingrediente macarrão = new Ingrediente(" macarrãozinho ", 5, "10/09/2021");
+		Ingrediente carne = new Ingrediente(" carne ", 5, "10/09/2021");
+
+		Prato yakissoba = new Prato(" Yakissoba moda italiana");
 		yakissoba.adicionarIngrediente(carne);
 		yakissoba.adicionarIngrediente(macarrão);
 		yakissoba.adicionarIngrediente(molho);
-		Ingrediente Champignon=new Ingrediente(" cogumelo Champignon", 2 , "25/04/2021");
-		Ingrediente brócules=new Ingrediente("brócules " , 1 ,  "21/04/2021");
-		Prato yakissobaChinesa=new Prato(" Yakissoba moda chinesa" );
+
+		Ingrediente Champignon = new Ingrediente(" cogumelo Champignon", 2, "25/04/2021");
+		Ingrediente brócules = new Ingrediente("brócules ", 1, "21/04/2021");
+		Prato yakissobaChinesa = new Prato(" Yakissoba moda chinesa");
 		yakissobaChinesa.adicionarIngrediente(brócules);
 		yakissobaChinesa.adicionarIngrediente(Champignon);
-		
+
 		yakissobaChinesa.adicionarIngrediente(carne);
 		yakissobaChinesa.adicionarIngrediente(macarrão);
-		
-		
-		
-		
-		
+
 		Cozinha cozinhaMineira = new Cozinha("Restaurante mineiro", feijoada, 14, 20);
 
-		Cozinha cozinhaChinesa = new Cozinha("Cozinha chinesa", yakissobaChinesa, 10, 21);
+		Funcionario bobe = new Funcionario(" bob ", " ajudante");
+		
+		Funcionario carlos = new Funcionario(" carlos ", " ajudante");
 
-		Cozinha cozinhaItaliana = new Cozinha("Cozinha italiana", yakissoba, 10, 21);
+		Funcionario natali = new Funcionario(" natali ", " cozinheira");
+		Funcionario ana = new Funcionario(" ana ", " cozinheira");
+		
+		
+cozinhaMineira.adicionarFuncionario(bobe);
+cozinhaMineira.adicionarFuncionario(carlos);
+cozinhaMineira.adicionarFuncionario(natali);
+cozinhaMineira.adicionarFuncionario(ana);
+
+
+		Cozinha cozinhaChinesa = new Cozinha("Cozinha chinesa", yakissobaChinesa, 10, 21);
+Funcionario  joao=new Funcionario( " joão " , " ajudante");
+
+Funcionario yuli = new Funcionario(" yuli ", " cozinheira");
+
+
+Funcionario leia = new Funcionario(" leia ", "  cosinheira");
+
+cozinhaChinesa.adicionarFuncionario(joao);
+cozinhaChinesa.adicionarFuncionario(yuli);
+cozinhaChinesa.adicionarFuncionario(leia);
+
+
+		Cozinha cozinhaItaliana = new Cozinha("Cozinha italiana", yakissoba, 13, 22);
+
+		Funcionario luca = new Funcionario(" Luca ", " cozinheiro");
+		Funcionario alice = new Funcionario(" alice ", "ajudante ");
+		 cozinhaItaliana.adicionarFuncionario(alice);
+		 
+		 cozinhaItaliana.adicionarFuncionario(luca);
+		
 		
 		System.out.println(cozinhaMineira);
 		System.out.println(cozinhaItaliana);
